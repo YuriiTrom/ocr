@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statera</title>
+  <link rel="icon" href="img/logo.ico" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.webp" class="log" alt="">
+      Statera</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Вхід</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#registerModal">Реєстрація</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <img src="img/logo.png" class="img1-center ltop" alt="">
+    <div class="tex-1">
+    <h1 class="text-center">Statera</h1>
+    <p class="text-center">Statera — це інноваційна платформа для управління фінансами, яка допомагає вам слідкувати за своїми витратами та ефективно керувати бюджетом. Ми прагнемо спростити процес ведення особистих фінансів, надаючи вам зручний та надійний інструмент для контролю витрат та аналізу фінансових даних.</p>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="pop"></div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+        <!-- Фото колонка -->
+        <div class="col-12 col-lg-6 mb-3">
+            <img src="img/img2.webp" class="img2 img-fluid" alt="Зображення">
+        </div>
+
+        <!-- Текст колонка -->
+        <div class="col-12 col-lg-6">
+            <div class="text">
+                <h1 class="text">Що ми пропонуємо?</h1>
+                <p class="text">Відстеження витрат: За допомогою нашої платформи ви можете легко відстежувати всі свої витрати в одному місці. Система автоматично аналізує транзакції та надає детальну інформацію про ваші фінансові потоки, дозволяючи вам бачити, на що витрачаються ваші гроші.</p>
+                <p class="text">Автоматичне сканування чеків: Забудьте про ручне введення даних. Зі Statera ви можете просто відсканувати свої чеки, і система автоматично розпізнає та класифікує всі покупки. Це заощаджує ваш час і забезпечує точність обліку витрат.</p>
+                <p class="text">Аналіз фінансових даних: Statera надає інструменти для аналізу та візуалізації ваших витрат. Ви можете створювати звіти, слідкувати за бюджетом та отримувати поради щодо покращення фінансової дисципліни.</p>
+                <p class="text">Зручний інтерфейс: Наша платформа має інтуїтивно зрозумілий інтерфейс, що робить процес управління фінансами простим та доступним для кожного. Всі функції легко доступні з вашого смартфону чи комп'ютера.</p>
+                <p class="text">Безпека та конфіденційність: Ми піклуємося про вашу безпеку та забезпечуємо найвищий рівень захисту даних. Ваші фінансові дані залишаються конфіденційними і зберігаються відповідно до найсучасніших стандартів безпеки.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+  <div class="pop"></div>
+</div>
+
+ 
+ <div class="container mt-5">
+  <img src="img/img3.webp" class="img3 img-fluid" alt="Зображення">
+    <div class="tex-3">
+    <h1 class="text-center">Чому обирають Statera?</h1>
+    <p class="text-center">Ефективність та зручність: Statera дозволяє економити час і зусилля, автоматизуючи процеси обліку та аналізу витрат.</p>
+    <p class="text-center">Точність та прозорість: Ви завжди будете знати, на що витрачаються ваші гроші, завдяки точному розпізнаванню чеків та детальним звітам.</p>
+    <p class="text-center">Підтримка та допомога: Наша команда підтримки завжди готова допомогти вам у вирішенні будь-яких питань або проблем.</p>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Вхід</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="login-form">
+            <div class="form-group">
+              <label for="loginUsername">Ім'я користувача або Email</label>
+              <input type="text" class="form-control" id="loginUsername" required>
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Пароль</label>
+              <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <div id="loginError" class="text-danger"></div>
+            <button type="submit"  class="btn btn-primary">Вхід</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Реєстрація</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="register-form">
+            <div class="form-group">
+              <label for="registerUsername">Ім'я користувача</label>
+              <input type="text" class="form-control" id="registerUsername" required>
+            </div>
+            <div class="form-group">
+              <label for="registerEmail">Електронна пошта</label>
+              <input type="email" class="form-control" id="registerEmail" required>
+            </div>
+            <div class="form-group">
+              <label for="registerPassword">Пароль</label>
+              <input type="password" class="form-control" id="registerPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Реєстрація</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class=" bg-light text-center py-3">
+    <div class="container">
+      <p class="text-muted">&copy; 2024 Statera</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

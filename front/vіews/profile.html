@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кабінет користувача - Statera</title>
+  <link rel="icon" href="img/logo.ico" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  
+  <!-- FullCalendar CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+ 
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <button class="btn btn-primary" onclick="openPopup()">Скан чеку</button>
+
+        <div id="popup" class="popup">
+        <div class="popup-content">
+            
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Скен чеку</h5>
+            <button type="button" class="close" data-dismiss="modal" onclick="closePopup()">
+              <span aria-hidden="true" >&times;</span>
+            </button>
+          </div>
+          
+            <div class="photo-area" id="photo-area">Область для показу фото</div>
+            <input type="file" id="file-input" accept="image/*" onchange="showPhoto(event)" style="display:none;">
+          <div class="pzz">
+            <button class="btn btn-primary " onclick="document.getElementById('file-input').click()">Завантажити фото</button>
+          </div>
+            
+            <div class="pz">
+              <button class="btn btn-primary"  id="openPageButton">Відсканувати</button></div>
+           </div>
+    </div>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <h5 class="sidebar-heading">Statera</h5>
+          <div class="text-center">
+            <img id="userPhoto" src="https://via.placeholder.com/150" class="img-fluid rounded-circle mb-2" alt="Фото користувача">
+            <h6 id="usernameDisplay">Тромпак Юрій</h6>
+          </div>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" data-section="profile">Кабінет</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-section="statistics">Статистика</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-section="history">Історія</a>
+            </li>
+          </ul>
+          <div class="text-center mt-4">
+            <button id="logout" class="btn btn-danger">Вихід</button>
+          </div>
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <!-- <input type="file" id="data" accept=".xlsx" /> -->
+        <div id="content" class="pt-3">
+          <!-- Контент буде динамічно змінюватися тут -->
+          <h1>Кабінет користувача</h1>
+          <p>Ласкаво просимо до кабінету користувача. Оберіть розділ зліва, щоб переглянути інформацію.</p>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  
+
+  <footer class="footer bg-light text-center py-3">
+    <div class="container">
+      <p class="text-muted">&copy; 2024 My Project</p>
+    </div>
+  </footer>
+  
+
+  <!-- Bootstrap JS, Popper.js, jQuery, FullCalendar JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="js/tempust.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>
+
+

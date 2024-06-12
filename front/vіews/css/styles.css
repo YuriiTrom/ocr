@@ -1,0 +1,298 @@
+body {
+  font-family: Arial, sans-serif;
+  
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.sidebar-heading {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+}
+
+.nav-link {
+  color: #333;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* .img-fluid {
+  max-width: 150px;
+  height: auto;
+} */
+
+.main-content {
+  margin-left: 250px; /* Adjust as per the sidebar width */
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#history-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.products {
+  display: flex;
+}
+
+.products ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+}
+
+.products ul + ul {
+  margin-left: -1px;
+}
+
+.products li {
+  padding: 4px 9px;
+}
+
+.products li + li {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin-bottom: -1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products span {
+  padding-left: 10px;
+}
+
+.productss-table {
+  margin-top: 25px;
+  width: 90%;
+}
+
+.productss-table tr:first-child {
+    background: #007bff;
+    color: white;
+}
+
+.productss-table td,
+.productss-table th {
+  border: 1px solid rgb(168, 168, 168);
+  padding: 5px 10px;
+}
+
+.dates-wrapper {
+  display: flex;
+}
+
+.dates-wrapper p {
+  margin-right: 10px;
+}
+
+div#content {
+  padding-bottom: 90px;
+}
+
+.log{
+  width: 5%;
+  height: 5%;
+  margin-top: -6px;
+}
+
+.container {
+  text-align: center;
+
+}
+
+.ltop{
+  margin-top: -9%;
+}
+
+.pop{
+  width: auto;
+  height: 20px;
+}
+
+.tex-1{
+  margin-top: -6%;
+}
+
+.img1-center {
+  width: 40%;
+  height: auto; /* Збереження пропорцій */
+  display: inline-block;
+
+}
+.foto{
+  display: flex;
+  justify-content: center; /* Центрує по горизонталі */
+  
+
+}
+
+.img2 {
+  width: 100%; /* Ширина зображення 100% від контейнера */
+  height: auto; /* Збереження пропорцій */
+  display: block; /* Дозволяє центрувати через margin */
+  margin: 0 auto; /* Центрування */
+}
+
+.img3 {
+  width: 50%; /* Ширина зображення 100% від контейнера */
+  height: auto; /* Збереження пропорцій */
+  display: block; /* Дозволяє центрувати через margin */
+  margin: 0 auto; /* Центрування */
+}
+
+@media (max-width: 991.98px) { /* Для екранів менше 992px */
+ 
+  .img2 {
+    width: 60%; /* Зміна розміру зображення для меншого екрану */
+    margin-bottom: 20px; /* Відступ знизу */
+  }
+}
+
+@media (min-width: 992px) { /* Для екрану від 992px і більше */
+  .img2 {
+    width: auto; /* Автоматична ширина для великих екранів */
+  }
+}
+
+#excelDataTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#excelDataTable td, #excelDataTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#excelDataTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#excelDataTable th {
+  background-color: #007281;
+  color: white;
+}
+
+.pj{
+  display: flex
+}
+/*
+*/
+
+/* Основні стилі для фону та центрування спливаючого вікна */
+
+.open-popup-btn {
+  background-color: #007bff;; /* Яскравий блакитний колір */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px; /* Круглі кути */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.open-popup-btn:hover {
+  background-color: #0097A7; /* Темніший відтінок для ефекту наведення */
+}
+
+.popup {
+  display: none; /* Приховуємо спочатку */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header {
+  margin-top: 0;
+}
+
+.photo-area {
+  width: 100%;
+  height: 65%;
+  background-color: #f0f0f0;
+  border: 1px dashed #ccc;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  overflow: hidden;
+ 
+}
+
+.pzz{
+  text-align: right;
+
+}
+
+.pz{
+  position: absolute; 
+  position: fixed;
+}
+
+
+
